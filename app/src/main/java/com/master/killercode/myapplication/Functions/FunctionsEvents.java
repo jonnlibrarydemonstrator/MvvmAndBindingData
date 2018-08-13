@@ -24,7 +24,7 @@ public class FunctionsEvents extends BaseObservable {
     }
 
     public void onButtonClick(View view) {
-        setText(unCapitalize(text));
+        setText(unCapitalize(getText()));
     }
 
 }

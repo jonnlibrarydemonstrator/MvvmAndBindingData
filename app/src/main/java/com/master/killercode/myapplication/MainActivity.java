@@ -12,6 +12,8 @@ import android.view.MenuItem;
 import com.master.killercode.myapplication.Clicks.ClicksActivity;
 import com.master.killercode.myapplication.Functions.FunctionsActivity;
 import com.master.killercode.myapplication.Include.IncludeActivity;
+import com.master.killercode.myapplication.LoadUrl.LoadUrlActivity;
+import com.master.killercode.myapplication.Objeto.ObjetoActivity;
 import com.master.killercode.myapplication._01_Init.init;
 import com.master.killercode.myapplication.databinding.ActivityMainBinding;
 
@@ -90,6 +92,12 @@ public class MainActivity extends AppCompatActivity
         }else if (id == R.id.functions) {
             initIntent(this, FunctionsActivity.class);
             binding.getInitMainActivity().setObservableText(binding.getInitMainActivity().lastAction + "Activity called: " + FunctionsActivity.class.getSimpleName());
+        }else if (id == R.id.objeto) {
+            initIntent(this, ObjetoActivity.class);
+            binding.getInitMainActivity().setObservableText(binding.getInitMainActivity().lastAction + "Activity called: " + ObjetoActivity.class.getSimpleName());
+        }else if (id == R.id.load_url) {
+            initIntent(this, LoadUrlActivity.class);
+            binding.getInitMainActivity().setObservableText(binding.getInitMainActivity().lastAction + "Activity called: " + LoadUrlActivity.class.getSimpleName());
         }
 
         binding.drawerLayout.closeDrawer(GravityCompat.START);

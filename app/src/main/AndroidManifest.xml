@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.master.killercode.myapplication">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -29,6 +31,8 @@
             android:name=".Clicks.ClicksActivity"
             tools:ignore="InnerclassSeparator" />
         <activity android:name=".Functions.FunctionsActivity" />
+        <activity android:name=".Objeto.ObjetoActivity" />
+        <activity android:name=".LoadUrl.LoadUrlActivity" />
     </application>
 
 </manifest>

@@ -22,6 +22,14 @@
             <item
                 android:id="@+id/functions"
                 android:title="Functions in XML" />
+
+            <item
+                android:id="@+id/objeto"
+                android:title="Objetos" />
+
+            <item
+                android:id="@+id/load_url"
+                android:title="Load From Url" />
         </menu>
     </item>
 
