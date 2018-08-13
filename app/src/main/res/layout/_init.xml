@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--os xml sempre iniciam com a tag “layout” (Tudo em letras minúsculas),-->
+    <!--esta tag recebe dois filhos, a tag <data> e a tag <Layout>.-->
+    <!--A Tag <layout> significa que é o layout que vc deseja usar como LinearLayout , -->
+    <!--RelativeLayout etc...-->
+
+    <data>
+
+        <!--Dentro da tag data, vc deverá iniciar os
+        javas que irá iniciar com a tag <variable>-->
+        <!--, esta tag pede dois parâmetros, name e type.-->
+        <!--<name> simplesmente e o nome que esta variável recebe dentro do xml-->
+        <!--<type> e o caminho do arquivo java que irá executar as funções dentro do xml-->
+
+        <variable
+            name="initLayout"
+            type="com.master.killercode.myapplication._01_Init.initVM" />
+
+        <!--Após definir estes parâmetros, o android studio irá gerar uma -->
+        <!--classe com o nome do xml para iniciar no java Activity que irá -->
+        <!--trabalhar com este xml-->
+        <!--Se o xml tiver o nome “EXEMPLO: main_activity” uma classe chamada-->
+        <!--MainActivityBinding será gerada para iniciar o xml em java-->
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Após inicia o <variable> na tag Data, posso trabalhar com oq existir -->
+        <!--dentro da classe java representada aqui pelo nome “initLayout”-->
+        <!--Estou chamando um campo ObservableField chamado “text”-->
+        <!--Como ele recebe uma String, dentro da tag text do TextView, -->
+        <!--eu inicio o parâmetro da seguinte maneira “android:text="@{initLayaut.text}"-->
+        <!--“-->
+        <!--Desta maneira, sempre que o campo text for modificado no java, automaticamente,-->
+        <!--o xml é atualizado junto,-->
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@{initLayout.text}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Agora é hora de continuar no java que irá representar este xml,-->
+        <!--vá para o arquivo init em _init-->
+        <!--***IMPORTANTE***-->
+        <!--Recomendasse que após finalizar estes procedimentos,-->
+        <!--de um “Clean” e depois “Rebuild”-->
+
+        <!--TODO-->
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

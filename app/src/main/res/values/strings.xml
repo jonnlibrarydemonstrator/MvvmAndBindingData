@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">mvvm_java</string>
+    <string name="click">CLICK</string>
+    <string name="click_with_param">CLICK WITH PARAM</string>
+    <string name="long_press">LONG PRESS</string>
+    <string name="opened">Opened</string>
+    <string name="closed">Closed</string>
+</resources>

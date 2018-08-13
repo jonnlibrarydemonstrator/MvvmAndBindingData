@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/init"
+            android:title="Init BindingData" />
+    </group>
+
+    <item android:title="Next">
+        <menu>
+            <item
+                android:id="@+id/clicks"
+                android:title="Clicks" />
+
+            <item
+                android:id="@+id/include"
+                android:title="Includes in XML" />
+
+            <item
+                android:id="@+id/functions"
+                android:title="Functions in XML" />
+        </menu>
+    </item>
+
+</menu>
